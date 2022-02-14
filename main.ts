@@ -257,28 +257,8 @@ game.onUpdate(function () {
                 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
                 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
                 `)
-            Trap_Lists[3].setImage(img`
-                . . . . . . . 1 1 . . . . . . . 
-                . . . . . . . 1 1 . . . . . . . 
-                . . . . . . 1 1 1 1 . . . . . . 
-                . . . . . . 1 1 1 1 . . . . . . 
-                . . . . . 1 1 1 1 1 1 . . . . . 
-                . . . . . 1 1 1 1 1 1 . . . . . 
-                . . . . 1 1 1 1 1 1 1 1 . . . . 
-                . . . . 1 1 1 1 1 1 1 1 . . . . 
-                . . . 1 1 1 1 1 1 1 1 1 1 . . . 
-                . . . 1 1 1 1 1 1 1 1 1 1 . . . 
-                . . 1 1 1 1 1 1 1 1 1 1 1 1 . . 
-                . . 1 1 1 1 1 1 1 1 1 1 1 1 . . 
-                . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 
-                . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . 
-                1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-                1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-                `)
             if (MainPlayer.tilemapLocation().column == 20) {
                 Trap_Lists[2].setVelocity(0, -200)
-                pause(800)
-                Trap_Lists[3].setVelocity(0, -200)
             }
         } else if (21 <= MainPlayer.tilemapLocation().row && MainPlayer.tilemapLocation().row <= 24) {
             tiles.setWallAt(tiles.getTileLocation(20, 24), false)
